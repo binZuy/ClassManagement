@@ -208,6 +208,7 @@ INSERT INTO `roomregisterform` (`userID`, `purpose`, `numberOfRoom`, `numberOfPe
 ('20215132', 'Lớp thi cuối kỳ Giải tích 2', 1, 50, 'Afternoon', '2023-07-21', 1, 11, NULL),
 ('20215689', 'Học sáng', 2, 50, 'Afternoon', '2023-07-13', NULL, 13, NULL);
 
+
 -- --------------------------------------------------------
 
 --
@@ -279,6 +280,7 @@ INSERT INTO `tbluser` (`email`, `pass`, `isType`, `fullName`, `schoolID`, `phone
 ('nhung.pt209876@sis.hust.edu.vn', '20209876', 'Student', 'Phạm Thi Nhung', '20209876', NULL),
 ('vu.ph215689@sis.hust.edu.vn', '1234', 'Student', 'Phan Nguyên Vũ', '20215689', '08756765456');
 
+	
 --
 -- Indexes for dumped tables
 --
