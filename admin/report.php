@@ -12,7 +12,7 @@ if (strlen($_SESSION['sscmsaid'] == 0)) {
     <html lang="en">
 
     <head>
-        <title>CIMS | Manage Students</title>
+        <title>CMS | Manage Students</title>
         <!-- Bootstrap CSS -->
         <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 

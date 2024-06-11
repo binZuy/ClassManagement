@@ -23,7 +23,7 @@ if (strlen($_SESSION['sscmsaid'] == 0)) {
    <html lang="en">
 
    <head>
-      <title>CIMS | Manage Equipments Schedule</title>
+      <title>CMS | Manage Equipments Schedule</title>
       <!-- Bootstrap CSS -->
       <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 

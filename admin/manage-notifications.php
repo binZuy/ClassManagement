@@ -23,7 +23,7 @@ if (strlen($_SESSION['sscmsaid'] == 0)) {
    <html lang="en">
 
    <head>
-      <title>CIMS | Manage Notifications</title>
+      <title>CMS | Manage Notifications</title>
       <!-- Bootstrap CSS -->
       <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 

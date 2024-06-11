@@ -18,7 +18,7 @@ if (strlen($_SESSION['sscmsaid'] == 0)) {
    <html lang="en">
 
    <head>
-      <title>CIMS | Manage Equipments Registered Student Details</title>
+      <title>CMS | Manage Equipments Registered Student Details</title>
 
       <!-- Bootstrap CSS -->
       <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />

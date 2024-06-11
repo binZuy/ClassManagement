@@ -249,7 +249,7 @@ CREATE TABLE `tbladmin` (
 --
 
 INSERT INTO `tbladmin` (`email`, `password`, `schoolID`, `fullName`) VALUES
-('admin@sis.hust.edu.vn', '20231234, '20231234', 'Admin');
+('admin@sis.hust.edu.vn', '20231234' , '20231234', 'Admin');
 
 -- --------------------------------------------------------
 
@@ -402,27 +402,27 @@ ALTER TABLE `roomschedule`
 --
 ALTER TABLE `equipment`
   ADD CONSTRAINT `equipment_ibfk_1` FOREIGN KEY (`currentRoom`) REFERENCES `room` (`id`),
-  ADD CONSTRAINT `equipment_ibfk_2` FOREIGN KEY (`lastUserUsed`) REFERENCES `tbluser` (`schoolID`);
+  ADD CONSTRAINT `equipment_ibfk_2` FOREIGN KEY (`lastUserUsed`) REFERENCES `tbluser` (`schoolID`) ON DELETE CASCADE;
 
 --
 -- Constraints for table `equipmentregisterform`
 --
 ALTER TABLE `equipmentregisterform`
-  ADD CONSTRAINT `equipmentregisterform_ibfk_1` FOREIGN KEY (`userID`) REFERENCES `tbluser` (`schoolID`),
+  ADD CONSTRAINT `equipmentregisterform_ibfk_1` FOREIGN KEY (`userID`) REFERENCES `tbluser` (`schoolID`) ON DELETE CASCADE,
   ADD CONSTRAINT `equipmentregisterform_ibfk_2` FOREIGN KEY (`reply`) REFERENCES `equipment` (`id`);
 
 --
 -- Constraints for table `reportform`
 --
 ALTER TABLE `reportform`
-  ADD CONSTRAINT `reportform_ibfk_1` FOREIGN KEY (`userReportID`) REFERENCES `tbluser` (`schoolID`),
+  ADD CONSTRAINT `reportform_ibfk_1` FOREIGN KEY (`userReportID`) REFERENCES `tbluser` (`schoolID`) ON DELETE CASCADE,
   ADD CONSTRAINT `reportform_ibfk_2` FOREIGN KEY (`roomID`) REFERENCES `room` (`id`);
 
 --
 -- Constraints for table `roomregisterform`
 --
 ALTER TABLE `roomregisterform`
-  ADD CONSTRAINT `roomregisterform_ibfk_1` FOREIGN KEY (`userID`) REFERENCES `tbluser` (`schoolID`),
+  ADD CONSTRAINT `roomregisterform_ibfk_1` FOREIGN KEY (`userID`) REFERENCES `tbluser` (`schoolID`) ON DELETE CASCADE,
   ADD CONSTRAINT `roomregisterform_ibfk_2` FOREIGN KEY (`reply`) REFERENCES `room` (`id`);
 COMMIT;
 

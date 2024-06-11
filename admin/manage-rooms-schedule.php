@@ -35,7 +35,7 @@ if (strlen($_SESSION['sscmsaid'] == 0)) {
     <html lang="en">
 
     <head>
-        <title>CIMS | Manage Rooms Schedule</title>
+        <title>CMS | Manage Rooms Schedule</title>
 
 
         <!-- Bootstrap CSS -->

@@ -18,7 +18,7 @@ if (strlen($_SESSION['sscmsaid'] == 0)) {
         );
         // TODO: INSERT INTO roomschedule
         Query::execute(
-            "INSERT INTO equipschedule (occupiedTime,occupiedDay,roomID) VALUES (?,?,?)",
+            "INSERT INTO roomschedule (occupiedTime,occupiedDay,roomID) VALUES (?,?,?)",
             [
                 $_POST['borrowTime'],
                 $_POST['borrowDay'],
@@ -33,7 +33,7 @@ if (strlen($_SESSION['sscmsaid'] == 0)) {
     <html lang="en">
 
     <head>
-        <title>CIMS | Room Registered Form Details</title>
+        <title>CMS | Room Registered Form Details</title>
         <!-- Bootstrap CSS -->
         <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
         <!-- App CSS -->

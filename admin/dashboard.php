@@ -21,7 +21,7 @@ if (strlen($_SESSION['sscmsaid'] == 0)) {
     </head>
 
     <body>
-        <?php include_once('includes/header.php'); ?>
+        <?php include_once('includes/header.php') ; ?>
         <div class="wrapper">
             <div class="container">
                 <!-- Page-Title -->
@@ -105,7 +105,7 @@ if (strlen($_SESSION['sscmsaid'] == 0)) {
                             <i class="fa fa-desktop float-right"></i>
                             <h6 class="text-muted text-uppercase m-b-20">Total Equipment Requests</h6>
                             <h2 class="m-b-20"><span data-plugin="counterup"><?php echo htmlentities(Query::execute("SELECT * from equipmentregisterform where reply is null")->rowCount()); ?></span></h2>
-                            <a href="manage-equipment-register-students.php"><span class="badge badge-primary"> View Detail </span></a>
+                            <a href="manage-equipment-register-students.php"><span class="badge badge-success"> View Detail </span></a>
                         </div>
                     </div>
 
@@ -115,7 +115,7 @@ if (strlen($_SESSION['sscmsaid'] == 0)) {
                             <i class="fa fa-desktop float-right"></i>
                             <h6 class="text-muted text-uppercase m-b-20">Recieved Reports</h6>
                             <h2 class="m-b-20"><span data-plugin="counterup"><?php echo htmlentities(Query::execute("SELECT * from reportform")->rowCount()); ?></span></h2>
-                            <a href="report.php"><span class="badge badge-primary"> View Detail </span></a>
+                            <a href="report.php"><span class="badge badge-danger"> View Detail </span></a>
                         </div>
                     </div>
                 </div>

@@ -1,12 +1,12 @@
 <!-- Navigation Bar-->
 <header id="topnav">
-    <div class="topbar-main">
+    <div class="topbar-main" style="background-color: #0d6efd;">
         <div class="container">
 
             <!-- LOGO -->
             <div class="topbar-left">
                 <a href="dashboard.php" class="logo">
-                    <span>Classroom Inventory Management System</span>
+                    <span>Classroom Management System</span>
                 </a>
             </div>
             <!-- End Logo container-->
@@ -28,7 +28,7 @@
 
                     <li class="list-inline-item dropdown notification-list">
                         <a class="nav-link dropdown-toggle waves-effect waves-light nav-user" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
-                            <img src="assets/images/users/avatar-1.jpg" alt="user" class="rounded-circle">
+                            <img src="assets/images/users/avatar.jpg" alt="user" class="rounded-circle">
                         </a>
                         <div class="dropdown-menu dropdown-menu-right profile-dropdown " aria-labelledby="Preview">
                             <!-- item-->
@@ -42,7 +42,7 @@
                                 foreach ($results as $row) {
                             ?>
                                     <div class="dropdown-item noti-title">
-                                        <h5 class="text-overflow"> <small>Welcome! <?php echo $row->fullName; ?> </small> </h5>
+                                        <h5 class="text-overflow"> <small>Welcome <?php echo $row->fullName; ?> </small> </h5>
                                 <?php $cnt = $cnt + 1;
                                 }
                             } ?>

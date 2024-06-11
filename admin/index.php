@@ -48,7 +48,7 @@ if (isset($_POST['login'])) {
     <div class="wrapper-page">
         <div class="account-bg">
             <div class="card-box mb-0">
-                <strong style="padding-top: 30px;"><a href="../index.php" class="text-muted"><i class="fa fa-home m-r-5"></i> Back Home!!</a> </strong>
+                <strong style="padding-top: 30px;"><a href="../index.php" class="text-muted"><i class="fa fa-home m-r-5"></i> <- Back Home</a> </strong>
                 <div class="text-center m-t-20">
                     <h6>Classroom Mananagement System </h6>
                     <h6>Admin Login</h6>

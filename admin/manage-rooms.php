@@ -33,7 +33,7 @@ if (strlen($_SESSION['sscmsaid'] == 0)) {
     <html lang="en">
 
     <head>
-        <title>CIMS | Manage Rooms</title>
+        <title>CMS | Manage Rooms</title>
 
 
         <!-- Bootstrap CSS -->

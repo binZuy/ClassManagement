@@ -18,6 +18,10 @@ body {
   padding-bottom: 70px;
 }
 
+.custom-padding {
+  padding-top: 10px;
+}
+
 .card-box {
   padding: 20px;
   border-radius: 5px;
@@ -2883,7 +2887,7 @@ h3.timeline-title {
 }
 
 .badge-success {
-  background-color: #1bb99a !important;
+  background-color: #039cfd !important;   /*#1bb99a*/
 }
 
 .badge-info {
