@@ -29,7 +29,7 @@ if (isset($_POST['login'])) {
 <html lang="en">
 
 <head>
-    <title>CIMS | Login</title>
+    <title>CMS | Login</title>
     <!-- Bootstrap CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 

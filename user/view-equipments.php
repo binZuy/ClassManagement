@@ -85,4 +85,6 @@ if (strlen($_SESSION['sscmsaid'] == 0)) {
         <script src="assets/js/jquery.app.js"></script>
     </body>
 
-    </html><?php }  ?>
+
+    </html>
+    <?php }  ?>
