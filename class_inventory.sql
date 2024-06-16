@@ -126,7 +126,7 @@ CREATE TABLE `notification` (
 --
 
 INSERT INTO `notification` (`notiContent`, `valid_til`, `id`) VALUES
-('Thông báo, từ ngày 7/8 nhà trường ngừng cho mượn các phòng học tại D7, D9 phục vụ kỳ thi UHYU 2023. Trân trọng!', '2023-07-13', 1);
+('Thông báo, từ ngày 25/6 nhà trường ngừng cho mượn các phòng học tại D5, D9 phục vụ kỳ thi cuối kỳ. Trân trọng!', '2023-06-01', 1);
 
 -- --------------------------------------------------------
 
