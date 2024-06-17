@@ -14,6 +14,33 @@ include('./helper/FunctionController.php');
 </head>
 
 <body>
+    <style>
+        #page-content-wrapper {
+            background-image: url("./assets/bg.jpg"); /* The image used *//* Used if the image is unavailable */
+            background-position: center; /* Center the image */
+            background-repeat: no-repeat; /* Do not repeat the image */
+            background-size: cover;
+        }
+
+        h5 {
+            font-weight: bold;
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 10px 15px;
+            text-align: center;
+        }
+
+        thead {
+      background-color: rgba(255, 255, 255, 0.7);
+    }
+
+        .table tbody tr:nth-child(odd) {
+    background-color: #f2f2f2; /* Light grey color for odd rows */
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #ffffff; /* White color for even rows */
+}
+    </style>
     <div class="d-flex" id="wrapper">
         <!-- Sidebar-->
         <div class="border-end bg-white" id="sidebar-wrapper">
@@ -84,4 +111,4 @@ include('./helper/FunctionController.php');
     <script src="js/scripts.js"></script>
 </body>
 
-</html>
+</html>i

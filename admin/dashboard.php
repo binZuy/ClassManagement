@@ -22,7 +22,17 @@ if (strlen($_SESSION['sscmsaid'] == 0)) {
     </head>
 
     <body>
-        <?php include_once('includes/header.php') ; ?>
+        <style>
+           .wrapper {
+   background-image: url("../assets/bg.jpg"); /* The image used */
+  background-color: #cccccc; /* Used if the image is unavailable */
+            background-position: center; /* Center the image */
+            background-repeat: no-repeat; /* Do not repeat the image */
+            background-size: cover; /* Resize the background image to cover the entire container */
+ 
+}
+        </style>
+        <?php include_once('includes/header.php'); ?>
         <div class="wrapper">
             <div class="container">
                 <!-- Page-Title -->
@@ -36,13 +46,14 @@ if (strlen($_SESSION['sscmsaid'] == 0)) {
                 <div class="row">
                     <!-- Rooms -->
                     <div class="col-md-6 col-xl-4">
-                        <div class="card-box tilebox-one">
-                            <i class="fa fa-desktop float-right"></i>
-                            <h6 class="text-muted text-uppercase m-b-20">Total Rooms</h6>
-                            <h2 class="m-b-20" data-plugin="counterup"><?php echo htmlentities(RoomController::getAllRooms()->rowCount()); ?></h2>
-                            <a href="manage-rooms.php"><span class="badge badge-primary"> View Detail </span></a>
+                        <div class="card-box tilebox-one custom-card">
+                            <i class="fa fa-desktop float-right custom-icon"></i>
+                            <h6 class="text-muted text-uppercase m-b-20 custom-heading">Total Rooms</h6>
+                            <h2 class="m-b-20 custom-counter" data-plugin="counterup"><?php echo htmlentities(RoomController::getAllRooms()->rowCount()); ?></h2>
+                            <a href="manage-rooms.php" class="custom-badge"><span class="badge badge-primary"> View Detail </span></a>
                         </div>
                     </div>
+
 
                     <div class="col-md-6 col-xl-4">
                         <div class="card-box tilebox-one">
