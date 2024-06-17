@@ -341,6 +341,52 @@ button:focus:not(:focus-visible) {
   outline: 0;
 }
 
+/* Custom Card Styles */
+.custom-card {
+    background-color: #ffffff;
+    border: 1px solid #e3e3e3;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.custom-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.custom-icon {
+    font-size: 24px;
+    color: #5a5a5a;
+}
+
+.custom-heading {
+    font-size: 14px;
+    font-weight: bold;
+    color: #888888;
+    margin-bottom: 20px;
+}
+
+.custom-counter {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333333;
+}
+
+.custom-badge .badge-primary {
+    background-color: #007bff;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 12px;
+    transition: background-color 0.2s ease;
+}
+
+.custom-badge .badge-primary:hover {
+    background-color: #0056b3;
+}
+
+
 input,
 button,
 select,

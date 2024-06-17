@@ -5,7 +5,7 @@
             <!-- LOGO -->
             <div class="topbar-left">
                 <a href="dashboard.php" class="logo">
-                    <span>Classroom Inventory Management System</span>
+                    <span > Management System</span>
                 </a>
             </div>
             <!-- End Logo container-->
