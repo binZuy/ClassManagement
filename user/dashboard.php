@@ -37,7 +37,7 @@ if (strlen($_SESSION['sscmsaid'] == 0)) {
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="page-title-box">
-                            <h4 class="page-title">Dashboard</h4>
+                            <h4 class="page-title" style='color: white'>Dashboard</h4>
                         </div>
                     </div>
                 </div>

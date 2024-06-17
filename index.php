@@ -7,124 +7,74 @@ include('./helper/FunctionController.php');
 
 <head>
     <meta charset="utf-8" />
-    <title>Classroom Inventory Management System</title>
+    <title>CLASSROOM MANAGEMENT SYSTEM</title>
     <!-- Favicon-->
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f4f7fc;
-        }
-        #wrapper {
-            min-height: 100vh;
-        }
-        #sidebar-wrapper {
-            min-width: 250px;
-            background: #343a40;
-            color: #fff;
-        }
-        .sidebar-heading {
-            padding: 0.875rem 1.25rem;
-            font-size: 1.2rem;
-            background-color: #0062cc;
-        }
-        .list-group-item {
-            border: none;
-            background-color: #343a40;
-            color: #fff;
-        }
-        .list-group-item:hover, .list-group-item:focus {
-            background-color: #495057;
-        }
-        .navbar {
-            background-color: #007bff;
-            padding: 0.5rem 1rem;
-        }
-        .navbar-nav {
-            font-size: 1.1rem;
-        }
-        .container-fluid {
-            padding: 2rem;
-        }
-        .table {
-            background-color: #000;
-            box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.075);
-        }
-        th {
-            background-color: #007bff;
-            /* color: #ffffff; */
-        }
-        .btn-primary {
-            background-color: #0062cc;
-            border-color: #005cbf;
-        }
-        .btn-primary:hover {
-            background-color: #005cbf;
-            border-color: #0056b3;
-        }
-        .footer {
-            background-color: #2c3e50;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-        .table {
-            background-color: transparent; /* Clear background */
-            border: 1px solid #fff; /* White borders for contrast */
-        }
-        th, td {
-            border-color: #fff; /* White borders inside the table */
-
-        }
-        .table > thead{
-            color: #000;
-        }
-
-        td {
-           border-right-width: 1px;
-            border-right-color: black;
-        }
-    </style>
 </head>
 
 <body>
+    <style>
+        #page-content-wrapper {
+            background-image: url("./assets/bg.jpg"); /* The image used *//* Used if the image is unavailable */
+            background-position: center; /* Center the image */
+            background-repeat: no-repeat; /* Do not repeat the image */
+            background-size: cover;
+        }
+
+        h5 {
+            font-weight: bold;
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 10px 15px;
+            text-align: center;
+        }
+
+        thead {
+      background-color: rgba(255, 255, 255, 0.7);
+    }
+
+        .table tbody tr:nth-child(odd) {
+    background-color: #f2f2f2; /* Light grey color for odd rows */
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #ffffff; /* White color for even rows */
+}
+    </style>
     <div class="d-flex" id="wrapper">
         <!-- Sidebar-->
-        <div class="border-end" id="sidebar-wrapper">
-            <div class="sidebar-heading">CIMS</div>
+        <div class="border-end bg-white" id="sidebar-wrapper">
+            <div class="sidebar-heading border-bottom bg-light" style="font-size:30px;">CMS</div>
             <div class="list-group list-group-flush">
-                <a class="list-group-item list-group-item-action" href="index.php">Home</a>
-                <a class="list-group-item list-group-item-action" href="admin/">Admin Login</a>
-                <a class="list-group-item list-group-item-action" href="user/">User Login</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="index.php">Home</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="admin/">Admin Login</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="user/">User Login</a>
+
             </div>
         </div>
         <!-- Page content wrapper-->
         <div id="page-content-wrapper">
             <!-- Top navigation-->
-            <nav class="navbar navbar-expand-lg navbar-light">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom blue">
                 <div class="container-fluid">
-                    <button class="btn btn-primary" id="sidebarToggle">&#9776;</button>
+                    <button class="btn btn-primary" id="sidebarToggle">Menu</button>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
-                            <li class="nav-item active">CLASSROOM INVENTORY MANAGEMENT SYSTEM</li>
+                            <li class="nav-item active" style="font-size:30px;">CLASSROOM MANAGEMENT SYSTEM</li>
                         </ul>
                     </div>
                 </div>
             </nav>
             <!-- Page content-->
-            <div class="container-fluid">
-                <p>This is a web-based application developed using PHP and MySQL.</p>
-                <h5>Classroom Status</h5>
-                <table class="table" >
-                    <thead >
-                        <tr >
+            <div class="container-fluid" style="padding-top:2%;">
+                <p>
+                <h5> Classroom Status</h5>
+                <table class="table">
+                    <thead>
+                        <tr>
                             <th>#</th>
-                            <th>Room</th>
+                            <th>Room </th>
                             <th>Capacity</th>
                             <th>Description</th>
                             <th>Usable?</th>
@@ -140,7 +90,7 @@ include('./helper/FunctionController.php');
                                 <tr>
                                     <td><?php echo htmlentities($cnt); ?></td>
                                     <td><?php echo htmlentities($row->id); ?></td>
-                                    <td ><?php echo htmlentities($row->capacity); ?></td>
+                                    <td><?php echo htmlentities($row->capacity); ?></td>
                                     <td><?php echo htmlentities($row->description); ?></td>
                                     <td><?php $room_usability = $row->usability;
                                         if ($room_usability == 0) : echo "<span style='color:red'>Unusable</span>";
@@ -152,12 +102,7 @@ include('./helper/FunctionController.php');
                         } ?>
                     </tbody>
                 </table>
-                </div>
-            <!-- Footer -->
-            <div class="footer">
-                © 2024 Classroom Inventory Management System. All Rights Reserved.
             </div>
-            
         </div>
     </div>
     <!-- Bootstrap core JS-->
@@ -166,4 +111,4 @@ include('./helper/FunctionController.php');
     <script src="js/scripts.js"></script>
 </body>
 
-</html>
+</html>i
