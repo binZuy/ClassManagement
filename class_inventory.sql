@@ -126,7 +126,7 @@ CREATE TABLE `notification` (
 --
 
 INSERT INTO `notification` (`notiContent`, `valid_til`, `id`) VALUES
-('Thông báo, từ ngày 2/3 nhà trường ngừng cho mượn các phòng học tại D3 phục vụ cho việc sửa chữa. Trân trọng!', '2024-08-01', 1);
+('Thông báo, từ ngày 2/3 nhà trường ngừng cho mượn các phòng học tại D3 phục vụ cho việc sửa chữa.\nTrân trọng!', '2024-08-01', 1);
 
 -- --------------------------------------------------------
 
