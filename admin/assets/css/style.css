@@ -14,12 +14,8 @@ html {
 
 body {
   font-size: 0.9rem;
-  background-color: #f5f5f5;   
+  background-color: #f5f5f5
   padding-bottom: 70px;
-}
-
-.custom-padding {
-  padding-top: 10px;
 }
 
 .card-box {
@@ -260,6 +256,13 @@ Author: CoderThemes
 Email: coderthemes$gmail.com
 File: Menu
 */
+
+.containerw {
+  width: 90%;
+  max-width: 100%;
+  padding-left: 10px;
+}
+
 .container {
   width: 90%;
   max-width: 100%;
@@ -2893,7 +2896,7 @@ h3.timeline-title {
 }
 
 .badge-success {
-  background-color: #039cfd !important;   /*#1bb99a*/
+  background-color: #1bb99a !important;
 }
 
 .badge-info {

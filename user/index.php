@@ -42,7 +42,7 @@ if (isset($_POST['login'])) {
             display: flex;
             justify-content: center;
             align-items: center;
-             background-image: url("../assets/bg.jpg"); /* The image used */
+            background-image: url("../assets/bg.jpg"); /* The image used */
             background-color: #cccccc; /* Used if the image is unavailable */
             height: 500px; /* You must set a specified height */
             background-position: center; /* Center the image */

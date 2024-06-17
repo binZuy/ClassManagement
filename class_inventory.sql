@@ -249,7 +249,7 @@ CREATE TABLE `tbladmin` (
 --
 
 INSERT INTO `tbladmin` (`email`, `password`, `schoolID`, `fullName`) VALUES
-('admin@sis.hust.edu.vn', '20231234' , '20231234', 'Admin');
+('admin@sis.hust.edu.vn', '123456' , '20231234', 'Admin');
 
 -- --------------------------------------------------------
 

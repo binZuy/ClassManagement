@@ -22,12 +22,11 @@ if (strlen($_SESSION['sscmsaid'] == 0)) {
     <body>
         <style>
             .wrapper {
-                 background-image: url("../assets/bg.jpg"); /* The image used */
-  background-color: #cccccc; /* Used if the image is unavailable */
+            background-image: url("../assets/bg.jpg"); /* The image used */
+            background-color: #cccccc; /* Used if the image is unavailable */
             background-position: center; /* Center the image */
             background-repeat: no-repeat; /* Do not repeat the image */
             background-size: cover; /* Resize the background image to cover the entire container */
- 
             }
         </style>
         <?php include_once('includes/header.php'); ?>
