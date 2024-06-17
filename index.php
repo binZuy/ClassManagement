@@ -41,7 +41,6 @@ include('./helper/FunctionController.php');
             </nav>
             <!-- Page content-->
             <div class="container-fluid" style="padding-top:2%;">
-                <p>This is a web-based application developed using PHP and MySQL. </p>
                 <p>
                 <h5> Classroom Status</h5>
                 <table class="table">
